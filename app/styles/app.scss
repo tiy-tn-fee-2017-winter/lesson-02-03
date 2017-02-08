@@ -25,6 +25,19 @@ $m-whitespace: 1rem;
   background: #dedede;
 }
 
+.container {
+  max-width: 65rem;
+  margin: auto;
+
+  &--small {
+    max-width: 38rem;
+  }
+
+  > * + * {
+    margin-top: $m-whitespace;
+  }
+}
+
 .suggestions {
   background: $c-white;
   box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
@@ -93,4 +106,10 @@ $m-whitespace: 1rem;
     background: $c-links;
     color: $c-white;
   }
+}
+
+.post {
+  padding: $m-whitespace / 2;
+  background: $c-white;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
 }

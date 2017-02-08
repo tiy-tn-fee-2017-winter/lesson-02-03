@@ -1,0 +1,16 @@
+.suggestions {
+  background: $c-white;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+
+  > * + * {
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+  }
+
+  &__row {
+    padding: $m-whitespace / 2;
+  }
+
+  &__row:hover {
+    background: rgba(140, 140, 180, 0.1);
+  }
+}

@@ -1,112 +1,20 @@
 // @import 'yoga';
 // @import 'normalize';
 
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-
-img {
-  align-self: center;
-  max-width: 100%;
-}
-
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-@import 'font-awesome';
-@import 'box-sizing';
-
 $c-white: #fefefe;
 $c-links: #2dbaa9;
 
 $m-whitespace: 1rem;
 
-.section {
-  padding: 1rem;
-  background: #dedede;
-}
-
-.container {
-  max-width: 65rem;
-  margin: auto;
-
-  &--small {
-    max-width: 38rem;
-  }
-
-  > * + * {
-    margin-top: $m-whitespace;
-  }
-}
-
-.suggestions {
-  background: $c-white;
-  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
-
-  > * + * {
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-  }
-
-  &__row {
-    padding: $m-whitespace / 2;
-  }
-
-  &__row:hover {
-    background: rgba(140, 140, 180, 0.1);
-  }
-}
-
-.card-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  a {
-    color: $c-links;
-    text-decoration: none;
-  }
-}
-
-.user-info {
-  display: flex;
-  align-items: center;
-
-  > * + * {
-    margin-left: $m-whitespace / 2;
-  }
-
-  &__avatar {
-    width: 4rem;
-    border-radius: 50%;
-  }
-
-  &__name {
-    flex-grow: 1;
-  }
-
-  &__more {
-    align-self: center;
-  }
-}
-
-.btn {
-  display: inline-block;
-
-  padding: $m-whitespace / 2 1rem;
-  transition: background 0.2s ease-in, color 0.2s ease-in;
-
-  border: 0.1rem solid $c-links;
-  border-radius: 0.2rem;
-  color: $c-links;
-  text-decoration: none;
-
-  cursor: pointer;
-
-
-  &:hover {
-    background: $c-links;
-    color: $c-white;
-  }
-}
+@import 'font-awesome';
+@import 'box-sizing';
+@import 'resets';
+@import 'layout';
+@import 'suggestions';
+@import 'card-heading';
+@import 'user-info';
+@import 'buttons';
 
 .post {
   padding: $m-whitespace / 2;

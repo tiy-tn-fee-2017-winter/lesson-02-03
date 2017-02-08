@@ -1,0 +1,17 @@
+.section {
+  padding: 1rem;
+  background: #dedede;
+}
+
+.container {
+  max-width: 65rem;
+  margin: auto;
+
+  &--small {
+    max-width: 38rem;
+  }
+
+  > * + * {
+    margin-top: $m-whitespace;
+  }
+}

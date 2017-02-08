@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+
+  padding: $m-whitespace / 2 1rem;
+  transition: background 0.2s ease-in, color 0.2s ease-in;
+
+  border: 0.1rem solid $c-links;
+  border-radius: 0.2rem;
+  color: $c-links;
+  text-decoration: none;
+
+  cursor: pointer;
+
+
+  &:hover {
+    background: $c-links;
+    color: $c-white;
+  }
+}

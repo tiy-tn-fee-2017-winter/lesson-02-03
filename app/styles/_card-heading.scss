@@ -1,0 +1,10 @@
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    color: $c-links;
+    text-decoration: none;
+  }
+}

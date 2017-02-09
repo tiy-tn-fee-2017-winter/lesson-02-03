@@ -4,6 +4,7 @@
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 $c-white: #fefefe;
 $c-links: #2dbaa9;
+$c-like: #ffaaaa;
 
 $m-whitespace: 1rem;
 
@@ -23,6 +24,10 @@ $m-whitespace: 1rem;
 
   &__pic {
     margin: 0 (-$m-whitespace / 2);
+
+    &:last-of-type {
+      margin-bottom: -$m-whitespace / 2;
+    }
   }
 
   > * + * {
@@ -51,5 +56,29 @@ $m-whitespace: 1rem;
     object-position: right;
 
     filter: sepia(0.2) hue-rotate(10deg);
+  }
+}
+
+.pricing-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  input {
+    display: none;
+
+    &:checked + .btn {
+      background: $c-like;
+      color: $c-white;
+    }
+  }
+
+  &__like-btn {
+    border-color: $c-like;
+    color: $c-like;
+
+    &:hover {
+      background: rgba($c-like, 0.5);
+    }
   }
 }

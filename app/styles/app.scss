@@ -20,4 +20,36 @@ $m-whitespace: 1rem;
   padding: $m-whitespace / 2;
   background: $c-white;
   box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+
+  &__pic {
+    margin: 0 (-$m-whitespace / 2);
+  }
+
+  > * + * {
+    margin-top: $m-whitespace / 2;
+  }
+}
+
+.square-box {
+  position: relative;
+
+  // Padding Top % refers to width
+  padding-top: 100%;
+  background: #ffaaaa;
+
+  &__pic {
+    display: block;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    object-position: right;
+
+    filter: sepia(0.2) hue-rotate(10deg);
+  }
 }

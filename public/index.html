@@ -14,7 +14,7 @@
 
   <main class="section">
     <div class="container container--small">
-      <div class="suggestions">
+      <!-- <div class="suggestions">
         <div class="suggestions__row">
 
           <div class="card-heading">
@@ -61,7 +61,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="post">
         <div class="post__header">
@@ -102,12 +102,13 @@
           <div class="pricing-info">
             <div class="pricing-info__like">
               <input type="checkbox" id="pricing_1">
-              <label for="pricing_1" class="pricing-info__like-btn btn btn--like">
+              <label for="pricing_1" class="pricing-info__like-btn btn btn--like" aria-role="button">
                 <span class="fa fa-heart-o"></span>
+                <span class="sr-only">like</span>
               </label>
             </div>
 
-            <p class="pricing-info__price">1</p>
+            <p class="pricing-info__price" >$1</p>
           </div>
         </div>
       </div>

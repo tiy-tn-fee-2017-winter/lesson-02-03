@@ -81,4 +81,14 @@ $m-whitespace: 1rem;
       background: rgba($c-like, 0.5);
     }
   }
+
+  &__price {
+    &::first-letter {
+      color: #777;
+    }
+    // Creates "fake HTML" with this content at the start of our price p tag
+    // &::before {
+    //   content: '$';
+    // }
+  }
 }

@@ -18,6 +18,7 @@ $m-whitespace: 1rem;
 @import 'buttons';
 
 .post {
+  min-width: 10rem;
   padding: $m-whitespace / 2;
   background: $c-white;
   box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
@@ -36,21 +37,27 @@ $m-whitespace: 1rem;
 }
 
 .square-box {
+  display: block;
   position: relative;
 
   // Padding Top % refers to width
-  padding-top: 100%;
   background: #ffaaaa;
+  overflow: hidden;
+  padding-top: 100%;
+
+  &::before {
+    display: block;
+    content: '';
+  }
 
   &__pic {
-    display: block;
     position: absolute;
 
     top: 0;
-    left: 0;
-
+    right: 0;
     width: 100%;
     height: 100%;
+
     object-fit: cover;
 
     object-position: right;
